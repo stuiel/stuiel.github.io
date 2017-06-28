@@ -14,4 +14,3 @@ function slider() {
     else
         $('#slider').stop().animate({"margin-right": '-200'});
 }
-

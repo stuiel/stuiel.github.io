@@ -15,8 +15,23 @@ hr {
     background-color: #ffffff; /* Modern Browsers */
 }
 
+.blackhr{
+
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: slategrey; /* old IE */
+    background-color: slategrey; /* Modern Browsers */
+}
+
 .generalheader{
     font-size: 50px;
+    font-weight: bold;
+
+}
+
+.generalheader2{
+    font-size: 40px;
     font-weight: bold;
 
 }
@@ -113,7 +128,7 @@ margin-top: 10px}
 }
 .container-fluid {
 
-
+ padding-bottom: 0;
 }
 
 
@@ -206,4 +221,16 @@ font-size: 30px;
 }
 
 
+.imagecontainer{
+    background-image: url(../img/mountainlandscape.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+
+    width: 100%;
+    display: block;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
