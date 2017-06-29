@@ -25,7 +25,7 @@ $(window).scroll(function () {
 
 function slider() {
     if (document.body.scrollTop > 500)
-        $('#navbar-example').stop().animate({"margin-right": '0'});
+        $('#navbar-example').stop().animate({"margin-right": ''});
 
     else
         $('#navbar-example').stop().animate({"margin-right": '-250'});

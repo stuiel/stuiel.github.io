@@ -94,7 +94,7 @@ h3{
 /*//////////////////////////NAVBAR/////////////////////////////////////////////*/
 
 
-.navbar  { border: 0px; background-color: #222222; position:fixed; top: 10px;  right: 5%; width: 110px; z-index: 999; }
+.navbar  { border: 0px; background-color: #222222; position:fixed; top: 10px; margin-right: -250px;  right: 5%; width: 110px; z-index: 999; transition: 0.1s;}
 .navbar .navbar-collapse { padding: 0px; max-height: none; }
 .navbar .navbar-nav { float: none; }
 .navbar-nav { margin: 0px; }
