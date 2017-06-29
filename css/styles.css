@@ -74,11 +74,21 @@ hr {
 }
 
 h4{
-    text-decoration: underline;
     font-weight: bold;
-
 }
 
+h3{
+    font-weight: bold;
+}
+
+.hcustom{
+
+    font-size: 40px;
+}
+.pcustom{
+
+    font-size: 30px;
+}
 
 
 /*//////////////////////////NAVBAR/////////////////////////////////////////////*/
@@ -317,7 +327,7 @@ font-size: 30px;
 
 
 
-#rig {
+.rig-cell {
 
     margin:0 auto;
     padding:0;
@@ -325,9 +335,9 @@ font-size: 30px;
     list-style:none;
 
 }
-#rig li {
+.rig-img {
     display: inline-block;
-    width:33%;
+    width:auto;
     vertical-align:middle;
     /*box-sizing:border-box;*/
     margin:0;
@@ -348,16 +358,16 @@ font-size: 30px;
 }
 
 
-.rig-img {
+.rig-cell {
 
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
 
     transform:scale(1);
     transition:all 1s;
 }
 
-#rig li:hover .rig-img {
+.rig-cell:hover .rig-img {
     transform:scale(1.05);
 }
 
@@ -376,7 +386,7 @@ font-size: 30px;
     filter:alpha(opacity=0);
     transition:all 0.6s;
 }
-#rig li:hover .rig-overlay {
+.rig-cell:hover .rig-overlay {
     opacity:0.8;
 }
 
@@ -401,7 +411,7 @@ font-size: 30px;
     transform:translateY(-20px);
     transition:all .3s;
 }
-#rig li:hover .rig-text {
+.rig-cell:hover .rig-text {
     transform:translateY(0px);
     opacity:0.9;
 }

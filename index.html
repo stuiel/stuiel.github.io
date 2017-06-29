@@ -29,7 +29,7 @@
     <div id="headertxt">
     <h3 id="name" >Stuart David Lockhart</h3>
 
-    <p >Interactive Resume</p>
+    <p >Interactive CV</p>
     </div>
 </div>
       
@@ -65,7 +65,7 @@
     <div class="navbar-collapse navbar-ex1-collapse collapse" style="height: 1px;">
         <ul class="nav navbar-nav">
             <li class="active"><a href="#profilecontainer">Profile</a></li>
-            <li><a href="">Experience</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#project">Projects</a></li>
             <li><a href="#contacts">Contact</a></li>
@@ -94,13 +94,13 @@
     </div>
     <div class="col-md-3 col-sm-3" >
         <h3>Details</h3>
-        <h4>Name</h4>
+        <h4 style="text-decoration: underline">Name</h4>
         <p>  Stuart David Lockhart</p>
-        <h4>Age</h4>
+        <h4 style="text-decoration: underline">Age</h4>
         <p>23</p>
-        <h4>Contact Number</h4>
+        <h4 style="text-decoration: underline">Contact Number</h4>
         <p>07856493939</p>
-        <h4>Location</h4>
+        <h4 style="text-decoration: underline">Location</h4>
         <p style="padding-bottom: 30px">Glasgow, Scotland</p>
     </div>
 </div>
@@ -108,13 +108,42 @@
 
 
 
-<!-- SECOND Container ( -->
+
+<div class="imagecontainer">
+
+    <div class="container-fluid">
+        <div class="col-lg-2" id="experience"></div>
+        <div class="container-fluid bg-3 text-center col-lg-8">
+            <h3 class="margin title generalheader2">EXPERIENCE</h3><br>
+            <hr class="blackhr">
+            <div class="text-center" >
+                <h3>example</h3>
+                <h4>info</h4>
+                <p>  goes</p>
+                <h4>here</h4>
+                <p>..</p>
+                <h4>..</h4>
+                <p>..</p>
+                <h4>..</h4>
+                <p style="padding-bottom: 30px">..</p>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+
+
+
+<!-- THIRD Container ( -->
 
 <div class="imagecontainer">
 
 <div class="container-fluid">
     <div class="col-lg-2" id="skills"></div>
-    <div class="container-fluid bg-3 text-center col-lg-8">
+    <div class="container-fluid bg-2 text-center col-lg-8">
         <h3 class="margin title generalheader2">SKILLS</h3><br>
         <hr class="blackhr">
         <div class="text-center" >
@@ -170,71 +199,52 @@
 
 
 
-<!-- Third Container ( -->
+<!-- FOURTH Container ( -->
 
 <div class="imagecontainer">
 
             <div class="container-fluid" id="project">
              <div class="col-lg-2" ></div>
-               <div class="container-fluid bg-2 text-center col-lg-8">
+               <div class="container-fluid bg-3 text-center col-lg-8">
                 <h3 class="margin title generalheader2">PROJECTS</h3><br>
                 <hr class="blackhr">
                 <div class="text-center" >
-                    <div class="col-sm-6">
 
-                        <div>
+
+                        <div id="android">
+
+                            <div class="col-md-6">
                         <h3 style="text-decoration: underline">Android Development</h3>
                             </br>
-
                         <p>  android bla bla bla honours project bla tour guide bla</p>
+                            </div><div class="col-md-6">
+                            <a class="rig-cell" href="https://play.google.com/store/apps/developer?id=LDevs" target="_blank"  >
+                                <img class="rig-img" src="img/googleplay.JPG" onclick="redirect()" height="300" width="auto"/>
+                                <span class="rig-overlay" onclick="redirect()" ></span>
+                                <span class="rig-text" onclick="redirect()" id="KGrt"> Google Play Developer Account <hr> </span>
 
-                        </br>
-                        </br>
-                        </br>
-                        </br>
-                        </br>
-                        </br>
-                            </br>
-                            </br>
-                            </br>
-
-</div>
-
-                        <h3 style="text-decoration: underline">Web Development</h3>
-                        </br>
-
-                        <p>  why i like it what its about etc</p>
-                        <p style="padding-bottom: 30px">..</p>
-                    </div>
-
-                </div>
-                   <div id="container3" >
-
-                       <ul id="rig" onclick="redirect()">
-                           <li id="KGo"  onclick="redirect()">
-                               <a class="rig-cell" onclick="redirect()" href="#" >
-                                   <img class="rig-img" src="img/googleplay.JPG" onclick="redirect()" height="300" width="auto"/>
-                                   <span class="rig-overlay" onclick="redirect()" ></span>
-                                   <span class="rig-text" onclick="redirect()" id="KGrt"> Google Play Developer Account <hr> </span>
-
-                               </a>
-                           </li>
-
-                           <li id="litwo" >
-                               <a class="rig-cell" href="#" >
-                                   <img class="rig-img" src="img/googleplay.JPG" height="300" width="auto"/>
-                                   <span class="rig-overlay" ></span>
-                                   <span class="rig-text" id="text2"> Google Play Developer Account <hr> </span>
-                               </a>
-                           </li>
-
-                       </ul>
+                            </a>
+                            </div>
+                            </div>
 
 
 
-                       <hr>
-                   </div>
 
+                        <div id="webdev">
+
+                            <div class="col-md-6">
+                                <h3 style="text-decoration: underline">Android Development</h3>
+                                </br>
+                                <p>  android bla bla bla honours project bla tour guide bla</p>
+                            </div><div class="col-md-6">
+                            <a class="rig-cell" href="https://play.google.com/store/apps/developer?id=LDevs" target="_blank"  >
+                                <img class="rig-img" src="img/googleplay.JPG" onclick="redirect()" height="300" width="auto"/>
+                                <span class="rig-overlay" onclick="redirect()" ></span>
+                                <span class="rig-text" onclick="redirect()" > Google Play Developer Account <hr> </span>
+
+                            </a>
+                        </div>
+                        </div>
                </div>
 
                 <div class="col-lg-2"></div>
@@ -244,7 +254,7 @@
 
 
 
-<!-- FOURTH Container ( -->
+<!-- FITH Container ( -->
 
 <div class="imagecontainer">
 
@@ -253,13 +263,25 @@
         <div class="container-fluid bg-2 text-center col-lg-12" id="contacts">
             <h3 class="margin title generalheader2">CONTACT</h3><br>
             <hr class="blackhr">
-            <div class="text-center" >
-                <h3>Android Development</h3>
-                <h4>info</h4>
-                <p>  goes</p>
-                <h4>here</h4>
+            <div>
+                <div class="col-md-4">
+                <h3 class="hcustom">Telephone</h3>
+                    </br>
+                <p class="pcustom">07856493939</p>
+                    </div><div class="col-md-4">
+                <h3 class="hcustom">Email</h3>
+                </br>
+                <p class="pcustom">Sdlockhart8@gmail.com</p>
+                </div><div class="col-md-4">
+                <h3 class="hcustom">LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/stuart-lockhart-58457611a/" target="_blank" >
 
-                <p style="padding-bottom: 30px">..</p>
+                    <img border="0" alt="W3Schools" src="img/linkedin.png" width="100" height="100">
+                </a>
+                </div>
+
+
+                <p style="padding-bottom: 200px"></p>
 
             </div>
 
