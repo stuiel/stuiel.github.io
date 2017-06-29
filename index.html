@@ -15,10 +15,14 @@
    <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <title>Stuart Lockhart</title>
   </head>
-  <body>
-   
+  <body data-spy="scroll" data-target="#navbar-example" class="">
+
 
 <div id="home-banner">
+
+    <a class="scroll-down " href="#profilecontainer">
+        <span class="glyphicon glyphicon-chevron-down animated bounce infinite"></span>
+    </a>
 
       </div>
 <div class="text_over_image  " >
@@ -38,34 +42,57 @@
 </div>
 
 
-<div id="slider" class="sidenav">
-    <a href="#" id="about">About</a>
-    <a href="#" id="blog">Blog</a>
-    <a href="#" id="projects">Projects</a>
-    <a href="#" id="contact">Contact</a>
-</div>
+<!--<div id="slider" class="sidenav">-->
+    <!--<a href="#" id="about">Profile</a>-->
+    <!--<a href="#" id="blog">Skills</a>-->
+    <!--<a href="#" id="projects">Projects</a>-->
+    <!--<a href="#" id="contact">Contact</a>-->
+<!--</div>-->
 
+
+<nav class="navbar navbar-default" id="navbar-example" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapse navbar-ex1-collapse collapse" style="height: 1px;">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#profilecontainer">Profile</a></li>
+            <li><a href="">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
 
 
 <!-- first Container -->
 
-<div class="container-fluid bg-2  ">
-    <div class="col-md-3">
+<div class="container-fluid bg-2" id="profilecontainer">
+    <div class="col-md-3 col-sm-3">
         <img src="img/mountain.jpg" class="img-responsive img-circle margin" style="display:inline; padding-top: 20px;" alt="me" width="300" height="300" >
     </div>
-    <div class="container-fluid bg-2 text-center col-lg-6">
+    <div class="container-fluid bg-2 text-center col-lg-6 col-sm-6">
         <h3 class="margin title generalheader2">PROFILE</h3><br>
         <hr class="blackhr">
     </div>
 
-    <div class="col-md-5" >
+    <div class="col-md-5 col-sm-5" >
         <h3 id="abouthead">About me</h3>
     <div id="profile2">
      <p style="font-size: 16px">I am a recent graduate of Glasgow Caledonian University, with a bachelor of Science in computing  </p>  </div>
 
 
     </div>
-    <div class="col-md-4" >
+    <div class="col-md-3 col-sm-3" >
         <h3>Details</h3>
         <h4>Name</h4>
         <p>  Stuart David Lockhart</p>
@@ -86,8 +113,8 @@
 <div class="imagecontainer">
 
 <div class="container-fluid">
-    <div class="col-lg-3"></div>
-    <div class="container-fluid bg-3 text-center col-lg-6">
+    <div class="col-lg-2" id="skills"></div>
+    <div class="container-fluid bg-3 text-center col-lg-8">
         <h3 class="margin title generalheader2">SKILLS</h3><br>
         <hr class="blackhr">
         <div class="text-center" >
@@ -105,7 +132,7 @@
 
     </div>
 
-    <div class="col-lg-3"></div>
+    <div class="col-lg-2"></div>
 </div>
 </div>
 
@@ -147,31 +174,49 @@
 
 <div class="imagecontainer">
 
-            <div class="container-fluid">
-             <div class="col-lg-3"></div>
-               <div class="container-fluid bg-2 text-center col-lg-6">
+            <div class="container-fluid" id="project">
+             <div class="col-lg-2" ></div>
+               <div class="container-fluid bg-2 text-center col-lg-8">
                 <h3 class="margin title generalheader2">PROJECTS</h3><br>
                 <hr class="blackhr">
                 <div class="text-center" >
-                    <h3>example</h3>
-                    <h4>info</h4>
-                    <p>  goes</p>
-                    <h4>here</h4>
-                    <p>..</p>
-                    <h4>..</h4>
-                    <p>..</p>
-                    <h4>..</h4>
-                    <p style="padding-bottom: 30px">..</p>
+                    <div class="col-sm-6">
+
+                        <div>
+                        <h3 style="text-decoration: underline">Android Development</h3>
+                            </br>
+
+                        <p>  android bla bla bla honours project bla tour guide bla</p>
+
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                            </br>
+                            </br>
+                            </br>
+
+</div>
+
+                        <h3 style="text-decoration: underline">Web Development</h3>
+                        </br>
+
+                        <p>  why i like it what its about etc</p>
+                        <p style="padding-bottom: 30px">..</p>
+                    </div>
 
                 </div>
                    <div id="container3" >
 
-                       <ul id="rig">
-                           <li id="KGo" >
-                               <a class="rig-cell" href="#" >
-                                   <img class="rig-img" src="img/googleplay.JPG" height="300" width="auto"/>
-                                   <span class="rig-overlay" ></span>
-                                   <span class="rig-text" id="KGrt"> Google Play Developer Account <hr> </span>
+                       <ul id="rig" onclick="redirect()">
+                           <li id="KGo"  onclick="redirect()">
+                               <a class="rig-cell" onclick="redirect()" href="#" >
+                                   <img class="rig-img" src="img/googleplay.JPG" onclick="redirect()" height="300" width="auto"/>
+                                   <span class="rig-overlay" onclick="redirect()" ></span>
+                                   <span class="rig-text" onclick="redirect()" id="KGrt"> Google Play Developer Account <hr> </span>
+
                                </a>
                            </li>
 
@@ -187,12 +232,13 @@
 
 
 
-
+                       <hr>
                    </div>
 
                </div>
 
-                <div class="col-lg-3"></div>
+                <div class="col-lg-2"></div>
+
             </div>
             </div>
 
@@ -202,28 +248,25 @@
 
 <div class="imagecontainer">
 
-    <div class="container-fluid">
-        <div class="col-lg-3"></div>
-        <div class="container-fluid bg-3 text-center col-lg-6">
+
+
+        <div class="container-fluid bg-2 text-center col-lg-12" id="contacts">
             <h3 class="margin title generalheader2">CONTACT</h3><br>
             <hr class="blackhr">
             <div class="text-center" >
-                <h3>example</h3>
+                <h3>Android Development</h3>
                 <h4>info</h4>
                 <p>  goes</p>
                 <h4>here</h4>
-                <p>..</p>
-                <h4>..</h4>
-                <p>..</p>
-                <h4>..</h4>
+
                 <p style="padding-bottom: 30px">..</p>
 
             </div>
 
         </div>
 
-        <div class="col-lg-3"></div>
-    </div>
+
+
 </div>
 
         </div>
