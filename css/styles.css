@@ -406,6 +406,22 @@ font-size: 30px;
 
 }
 
+#gamedev:hover .rig-overlay{
+
+    background-image: url(../img/externallink.png);
+    height: auto;
+    width:auto;
+    display: block;
+    background-repeat: no-repeat;
+    right:0;
+    position: fixed;
+    bottom:0;
+
+
+
+
+}
+
 .rig-text {
     display:block;
     padding:0 30px;
