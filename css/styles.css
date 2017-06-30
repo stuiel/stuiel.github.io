@@ -115,41 +115,43 @@ h3{
 
 .fixed .navbar  { position: fixed; top: 60px; }
 
-/*.navbar  { left: 0px; width: 100%; }*/
-/*.navbar .nav > li { height: 60px; }*/
-/*.navbar .nav > li a { height: 60px; text-align: center; padding-top: 20px; font-weight: 600; color: #FFFFFF; }*/
-
-/*.fixed .navbar { top: 0px; }*/
 
 
-.sidenav{
+.navbar  { left: 0px; width: 100%; }
+.navbar .nav > li { height: 60px; }
+.navbar .nav > li a { height: 60px; text-align: center; padding-top: 20px; font-weight: 600; color: #FFFFFF; }
 
-    right: 0px;
-    transition: 0.1s;
-    padding: 20px;
-    width: 100px;
-    top:10px;
-    height: 100px;
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: -200px;
+.navbar { top: 0px; }
 
 
-}
-#slider {
-    right: 0px;
-    transition: 0.1s;
-    padding: 20px;
-    width: 100px;
-    top:10px;
-    height: 100px;
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: -200px;
-    border-radius: 0 150px 150px 0;
-    position: fixed;
+/*.sidenav{*/
 
-}
+    /*right: 0px;*/
+    /*transition: 0.1s;*/
+    /*padding: 20px;*/
+    /*width: 100px;*/
+    /*top:10px;*/
+    /*height: 100px;*/
+    /*text-decoration: none;*/
+    /*font-size: 30px;*/
+    /*margin-right: -200px;*/
+
+
+/*}*/
+/*#slider {*/
+    /*right: 0px;*/
+    /*transition: 0.1s;*/
+    /*padding: 20px;*/
+    /*width: 100px;*/
+    /*top:10px;*/
+    /*height: 100px;*/
+    /*text-decoration: none;*/
+    /*font-size: 30px;*/
+    /*margin-right: -200px;*/
+    /*border-radius: 0 150px 150px 0;*/
+    /*position: fixed;*/
+
+/*}*/
 
 
 #slider a:hover {

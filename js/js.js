@@ -2,7 +2,6 @@
 $(document).ready(function () {
     slider();
 
-
     $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
 
@@ -15,8 +14,9 @@ $(document).ready(function () {
             window.location.hash = target;
         });
     });
-    applyNavigation();
 
+
+    applyNavigation();
 });
 
 $(window).scroll(function () {
@@ -37,6 +37,7 @@ function redirect()
     window.location(url);
 }
 
+
 function applyNavigation()
 {
     applyClickEvent();
@@ -44,6 +45,7 @@ function applyNavigation()
     applyScrollSpy();
     applyStickyNavigation();
 }
+
 
 
 function applyNavigationFixForPhone()
@@ -61,8 +63,6 @@ function applyScrollSpy()
         window.location.hash = $('.nav .active a').attr('href').replace('#', '#/');
     });
 }
-
-
 
 function applyStickyNavigation()
 {
@@ -87,7 +87,6 @@ function stickyNavigation()
         $('body').removeClass('fixed');
     }
 }
-
 function applyClickEvent()
 {
     $('a[href*=#]').on('click', function(e)
