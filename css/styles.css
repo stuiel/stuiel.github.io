@@ -5,7 +5,15 @@ border: 0px;
 }
 #profileheader{
     text-align: center;
+    background-size: contain;
 }
+
+@media screen and (max-width:400px){
+    #profileheader{
+        Background-size:contain;
+    }
+}
+
 .scroll-down{
 
     background-color: #319190;
