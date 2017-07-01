@@ -1,26 +1,13 @@
 
 $(document).ready(function () {
-    slider();
-
-    $('a[href^="#"]').on('click',function (e) {
-        e.preventDefault();
-
-        var target = this.hash;
-        var $target = $(target);
-
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 900, 'swing', function () {
-            window.location.hash = target;
-        });
-    });
-
-
+    slowscroll();
     applyNavigation();
+    slider();
 });
 
 $(window).scroll(function () {
     slider();
+
 });
 
 function slider() {
@@ -38,19 +25,30 @@ function redirect()
 }
 
 
+
+
 function applyNavigation()
 {
-    applyClickEvent();
     applyNavigationFixForPhone();
+    applyNavigationFixForPhone2();
     applyScrollSpy();
     applyStickyNavigation();
 }
 
 
-
 function applyNavigationFixForPhone()
 {
-    $('.navbar li a').click(function(event)
+    $('.navbar li a ').click(function(event)
+    {
+        $('.navbar-collapse').removeClass('in').addClass('collapse');
+
+    });
+}
+
+
+function applyNavigationFixForPhone2()
+{
+    $('.navbar-toggle ').click(function(event)
     {
         $('.navbar-collapse').removeClass('in').addClass('collapse');
     });
@@ -87,19 +85,20 @@ function stickyNavigation()
         $('body').removeClass('fixed');
     }
 }
-function applyClickEvent()
-{
-    $('a[href*=#]').on('click', function(e)
-    {
+
+
+function slowscroll () {
+    $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
 
-        if( $( $.attr(this, 'href') ).length > 0 )
-        {
-            $('html, body').animate(
-                {
-                    scrollTop: $( $.attr(this, 'href') ).offset().top
-                }, 400);
-        }
-        return false;
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
     });
+
 }
