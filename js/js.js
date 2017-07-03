@@ -30,7 +30,6 @@ function redirect()
 function applyNavigation()
 {
     applyNavigationFixForPhone();
-    applyNavigationFixForPhone2();
     applyScrollSpy();
     applyStickyNavigation();
 }
@@ -46,13 +45,7 @@ function applyNavigationFixForPhone()
 }
 
 
-function applyNavigationFixForPhone2()
-{
-    $('.navbar-toggle ').click(function(event)
-    {
-        $('.navbar-collapse').removeClass('in').addClass('collapse');
-    });
-}
+
 
 function applyScrollSpy()
 {
@@ -102,3 +95,12 @@ function slowscroll () {
     });
 
 }
+
+
+
+
+
+
+
+
+
