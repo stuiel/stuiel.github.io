@@ -118,16 +118,16 @@ h3{
 
 
 @media (max-width: 767px) {
-    .jumbotron:before {
-        bottom: 100px;
-        left: 20px;
-        right: 20px;
-        top: 20px;
-    }
 
+
+.navbar-header{
+
+    top:0;
+}
     .navbar {
         left: 0px;
         width: 100%;
+
     }
 
     .navbar .nav > li {
@@ -144,6 +144,7 @@ h3{
 
     .fixed .navbar {
         top: 0px;
+        position: fixed;
     }
 
 }
