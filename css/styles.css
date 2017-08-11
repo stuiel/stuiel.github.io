@@ -14,8 +14,18 @@ border: 0px;
     }
 }
 
+.abouthead{
+
+    font-size: 4vh;
+}
 
 
+.deetshead{
+    font-weight: bolder;
+    font-size: 20px;
+    color:white;
+    text-shadow: 0.5px 0.5px 1px #E4E0E3;
+}
 
 .scroll-down{
 
@@ -92,6 +102,7 @@ h4{
 .experienceh2
 {
     font-weight: bold;
+
 }
 
 .hcustom{
@@ -102,6 +113,16 @@ h4{
 
     font-size: 30px;
 }
+.experience-list li {
+
+    font-size: 20px;
+}
+
+.expcontainer{
+
+    display: block;
+}
+
 
 
 /*//////////////////////////NAVBAR/////////////////////////////////////////////*/
@@ -124,6 +145,11 @@ h4{
 
 @media (max-width: 767px) {
 
+
+    .exlst li{
+
+        font-size: 15px;
+    }
 
 .navbar-header{
 
@@ -152,9 +178,9 @@ h4{
         position: fixed;
     }
 
-    .experience-list
-    {
-        font-size: 20px;
+    .experience-list li {
+
+        font-size: 2vh;
     }
 
     .jobsmall
@@ -198,7 +224,8 @@ h4{
 
 .experience-list{
 
-    min-height: 120px;
+    min-height: 15vh;
+
 }
 
 
