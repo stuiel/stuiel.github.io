@@ -3,6 +3,16 @@ $(document).ready(function () {
     slowscroll();
     applyNavigation();
     slider();
+    $('.nav li a').click(function(e) {
+
+        $('.nav li .active').removeClass('active');
+
+        var $parent = $(this).parent();
+        $parent.addClass('active');
+        e.preventDefault();
+    });
+
+
 });
 
 $(window).scroll(function () {
@@ -17,6 +27,9 @@ function slider() {
     else
         $('#navbar-example').stop().animate({"margin-right": '-250'});
 }
+
+
+
 
 function redirect()
 {
@@ -57,7 +70,7 @@ function applyScrollSpy()
 
 function applyStickyNavigation()
 {
-    lnStickyNavigation = $('.scroll-down').offset().top + 20;
+    lnStickyNavigation = $('.scroll-down').offset().top + 1;
 
     $(window).on('scroll', function()
     {
