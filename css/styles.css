@@ -14,6 +14,16 @@ border: 0px;
     }
 }
 
+.exp {
+
+min-height: 75vh;
+}
+
+.expbtn{
+padding-top: 34.5%;
+    margin-left: 0;
+
+}
 .abouthead{
 
     font-size: 4vh;
@@ -135,7 +145,7 @@ h4{
 .navbar .nav > li { display: block; float: none; height: 80px; }
 .navbar .nav > li a { display: block;  height: 80px; text-align: center; padding-top: 30px; font-weight: 600; color: #FFFFFF; }
 .navbar .nav > li a:hover, .navbar .nav > li a:focus { color: #999999; }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background: #22A39F; color: #FFFFFF; }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background: #3C77B0; color: #FFFFFF; }
 .navbar-default .navbar-toggle:hover .icon-bar,
 .navbar-default .navbar-toggle:focus .icon-bar { background: #222222; }
 
@@ -189,6 +199,16 @@ h4{
     }
 
 
+    .exp {
+
+        min-height: 90vh;
+    }
+
+    .expbtn{
+
+        margin-left: 0;
+
+    }
 
 
 
@@ -222,6 +242,109 @@ h4{
 
 /*}*/
 
+.btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.btn:before{
+    font-family: 'icomoon';
+speak: none;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+position: relative;
+-webkit-font-smoothing: antialiased;
+}
+
+.btn-1 {
+    border: 3px solid #474e5d;
+    color: #474e5d;
+}
+
+
+
+.btn-1e {
+    overflow: hidden;
+}
+
+.btn-1e:after {
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background: #395b83;
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.btn-1e:hover,
+.btn-1e:active {
+    color: #0e83cd;
+}
+
+.btn-1e:hover:after {
+    height: 260%;
+    opacity: 1;
+}
+
+.btn-1e:active:after {
+    height: 400%;
+    opacity: 1;
+}
+
+
+.slidebtn{
+    font-family: arial;
+    cursor: pointer;
+    color: #E8E8E8 !important;
+    font-size: 15px;
+    text-shadow: 1px 1px 0px #FFFFFF;
+    box-shadow: 2px 1px 1px #3C77B0;
+    padding: 10px 25px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background: #000000;
+
+}
+.slidebtn:hover{
+    color: #FFFFFF !important;
+    background: #3C77B0;
+    background: linear-gradient(top,  #316291,  #376582);
+    background: -ms-linear-gradient(top,  #316291,  #376582);
+    background: -webkit-gradient(linear, left top, left bottom, from(#316291), to(#376582));
+    background: -moz-linear-gradient(top,  #316291,  #376582);
+}
+
+
 .experience-list{
 
     min-height: 15vh;
@@ -240,7 +363,7 @@ h4{
     top: 40px;
     color: #474e5d;
     text-decoration-color: black;
-    background-color: #319190;
+    background-color: #3C77B0;
     padding-bottom: 10px;
     padding-top: 10px;
 }
@@ -252,7 +375,7 @@ h4{
     top: 100px;
     color: #474e5d;
     padding-bottom: 10px;
-    background-color: #319190;
+    background-color: #3C77B0;
 }
 
 #projects {
@@ -262,7 +385,7 @@ padding-right: 100px;
     top: 160px;
     color: #474e5d;
     padding-bottom: 10px;
-    background-color: #319190;
+    background-color: #3C77B0;
 }
 
 #contact {
@@ -272,7 +395,7 @@ padding-right: 100px;
     text-decoration-color: black;
     top: 220px;
     padding-bottom: 10px;
-    background-color: #319190
+    background-color: #3C77B0;
 }
 
 
@@ -483,7 +606,7 @@ font-size: 30px;
     bottom: 0;
     right: 0;
     margin: auto;
-    background: #319190  center 20%;
+    background: #3C77B0  center 20%;
     background-size:40px 40px;
     opacity:0;
     filter:alpha(opacity=0);
